@@ -1,0 +1,101 @@
+body{
+  font-family: "helvetica";
+  counter-reset: item;
+  color:#333;
+  background-color: #2B445A;
+}
+.wrap{
+  margin: 0 20%;
+}
+h1{
+  text-align: center;
+  color:#E35060;
+  font-weight: normal;
+  font-size:30px;
+}
+.warning{
+  background-color: fireBrick;
+  color:white;
+  padding:10px;
+  font-weight: normal;
+  text-transform: capitalize;
+  text-align: center;
+  border:1px solid darkRed;
+  margin-bottom: 30px;
+}
+label{
+  color: darkGrey;
+  text-transform: uppercase;
+}
+.label{
+  display:block;
+  margin-bottom: 5px;
+}
+.label-radio{
+  margin-right: 20px;
+}
+ol{
+  text-align: center;
+  list-style:none;
+  margin-top: 50px;
+  border:2px solid teal;
+  border-radius: 5px;
+  padding:15px;
+  background-color: teal;
+}
+li{
+  font-size:28px;
+  margin-bottom: 20px;
+  counter-increment: item;
+  display:inline-block;
+  vertical-align: top;
+}
+li:before{
+  margin-right: 10px;
+   content: counter(item);
+   padding:7px 5px 5px;
+   background: #E35060;
+   border-radius: 100%;
+   color: white;
+   width: 1.2em;
+   text-align: center;
+   display: inline-block;
+   margin-bottom: 20px;
+}
+.li{
+  display:inline-block;
+  margin:10px 20px;
+}
+li span{
+  font-size:16px;
+  display:block;
+  margin-bottom: 3px;
+  color:#111;
+}
+p{
+  margin-bottom: 20px;
+}
+span.radio{
+  color:grey;
+  margin-right:10px;
+}
+input{
+  border:1px solid tomato;
+}
+input[type="text"]{
+  padding:7px 5px;
+  width:100%;
+}
+textarea{
+  width:100%;
+  padding:5px;
+}
+input[type="submit"]{
+  background-color: #E35060;
+  padding:8px 40px;
+  font-size:18px;
+  border:0;
+  width:100%;
+  margin:0;
+  border-radius:20px;
+  color:white;

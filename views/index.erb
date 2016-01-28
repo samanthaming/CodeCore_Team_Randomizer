@@ -1,0 +1,58 @@
+<form action="/" method="POST">
+  <p>
+    <span class="label"><label>Names</label></span>
+    <textarea name="name" rows="8" cols="40"><%= @name %></textarea>
+  </p>
+
+  <p>
+    <label class="label-radio">Method</label>
+    <input type="radio" name="method" value="team_count" <%= @teamcount %>> <span class="radio">Team Count</span>
+    <input type="radio" name="method" value="per_team" <%= @perteam %>> <span class="radio">Number Per Team</span>
+  </p>
+  <p>
+    <span class="label"><label>Number</label></span>
+    <input type="text" name="number" value="<%= @number %>">
+  </p>
+  <p>
+    <input type="submit" value="Submit">
+  </p>
+</form>
+
+<!--
+<ol>
+  <div class="li">
+  <li>
+    <span>asdfasdf</span>
+    <span>asdfasdf</span>
+    <span>asdfasdf</span>
+  </li>
+  </div>
+  <div class="li">
+  <li>
+    <span>asdfasdf</span>
+    <span>asdfasdf</span>
+    <span>asdfasdf</span>
+  </li>
+  </div>
+  <div class="li">
+  <li>
+    <span>asdfasdf</span>
+    <span>asdfasdf</span>
+
+  </li>
+  </div>
+</ol> -->
+
+
+
+<% if @names %>
+  <ol>
+    <% @names.each do |name|%>
+    <div class="li"><li>
+      <% name.each do |n|%>
+        <span><%= n %></span>
+      <% end %>
+    </li></div>
+    <% end %>
+  </ol>
+<% end %>

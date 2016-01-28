@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/style.css">
+  <title>Team Randomizer</title>
+</head>
+<body>
+  <div class="wrap">
+  <h1>Team Randomizer</h1>
+
+  <% if session[:warning] %>
+    <h3 class="warning">You must fill in all fields</h3>
+  <% end %>
+  
+  <%= yield %>
+</div>
+</body>
+</html>
